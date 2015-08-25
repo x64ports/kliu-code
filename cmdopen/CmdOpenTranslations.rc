@@ -1,0 +1,179 @@
+//
+// NOTE: This file is encoded in UTF-8.
+//
+
+#include "CmdOpenTranslations.h"
+
+// English
+STRINGTABLE LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+{
+	IDS_MENUTEXT	"Open Comm&and Prompt"
+	IDS_ELEVTEXT	"Open E&levated Command Prompt"
+}
+
+// English (NT6.1+)
+STRINGTABLE LANGUAGE LANG_ENGLISH, SUBLANG_NT61
+{
+	IDS_MENUTEXT	"Open comm&and prompt"
+	IDS_ELEVTEXT	"Open e&levated command prompt"
+}
+
+// 中文(繁體)
+STRINGTABLE LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+{
+	IDS_MENUTEXT	"打開命令提示字元(&A)"
+	IDS_ELEVTEXT	"以管理員權限打開命令提示字元(&L)"
+}
+
+// 中文(简体)
+STRINGTABLE LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+{
+	IDS_MENUTEXT	"打开命令提示符(&A)"
+	IDS_ELEVTEXT	"以管理员权限打开命令提示符(&L)"
+}
+
+// čeština
+STRINGTABLE LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"Otevřít p&říkazový řádek"
+	IDS_ELEVTEXT	"Otevřít příkazový řá&dek s vyššímy právy"
+}
+
+// Deutsch
+STRINGTABLE LANGUAGE LANG_GERMAN, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"Einga&beaufforderung öffnen"
+}
+
+// Ελληνικά
+STRINGTABLE LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"Άνοιγμα &γραμμής εντολών"
+}
+
+// español
+STRINGTABLE LANGUAGE LANG_SPANISH, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"A&brir un símbolo del sistema"
+}
+
+// français
+STRINGTABLE LANGUAGE LANG_FRENCH, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"Ouvrir une &invite de commandes"
+}
+
+// עברית
+STRINGTABLE LANGUAGE LANG_HEBREW, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"פתח &שורת פקודה"
+	IDS_ELEVTEXT	"פתח שורת פ&קודה כמנהל"
+}
+
+// magyar
+STRINGTABLE LANGUAGE LANG_HUNGARIAN, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"P&arancsablak nyitása"
+	IDS_ELEVTEXT	"Parancsab&lak nyitása rendszergazdaként"
+}
+
+// italiano
+STRINGTABLE LANGUAGE LANG_ITALIAN, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"Apri un prompt &dei comandi"
+}
+
+// 日本語
+STRINGTABLE LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"コマンド プロンプトで開く(&A)"
+	IDS_ELEVTEXT	"管理者権限でコマンド プロンプトを開く(&L)"
+}
+
+// 한국어
+STRINGTABLE LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"명령 프롬프트 열기(&A)"
+	IDS_ELEVTEXT	"명령 프롬프트 열기 - 관리자 권한(&L)"
+}
+
+// Nederlands
+STRINGTABLE LANGUAGE LANG_DUTCH, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"&Opdrachtprompt openen"
+}
+
+// norsk
+STRINGTABLE LANGUAGE LANG_NORWEGIAN, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"Åpne i ledete&kst"
+}
+
+// polski
+STRINGTABLE LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"Otwórz &wiersz polecenia"
+}
+
+// Português (Brasil)
+STRINGTABLE LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+{
+	IDS_MENUTEXT	"&Abrir Prompt de Comando"
+}
+
+// português (Portugal)
+STRINGTABLE LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+{
+	IDS_MENUTEXT	"Abrir uma &linha de comandos"
+}
+
+// română
+STRINGTABLE LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"Deschide &linie de comandă"
+	IDS_ELEVTEXT	"Deschide linie de comandă &elevată"
+}
+
+// русский
+STRINGTABLE LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"&Открыть командную строку"
+}
+
+// srpskohrvatski
+STRINGTABLE LANGUAGE LANG_CROATIAN, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"Otvori kom&andnu liniju"
+}
+
+// српски
+STRINGTABLE LANGUAGE LANG_SERBIAN, SUBLANG_SERBIAN_CYRILLIC
+{
+	IDS_MENUTEXT	"Отвори ком&андну линију"
+}
+
+// slovenčina
+STRINGTABLE LANGUAGE LANG_SLOVAK, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"Otvor &Príkazový riadok"
+	IDS_ELEVTEXT	"Otvor Príkazový riadok ako &správca"
+}
+
+// svenska
+STRINGTABLE LANGUAGE LANG_SWEDISH, SUBLANG_NEUTRAL
+{
+	IDS_MENUTEXT	"Öppna &kommandotolk"
+	IDS_ELEVTEXT	"Öppna &upphöjd kommandotolk"
+}
+
+// Türkçe
+STRINGTABLE LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"Komut &İstemi'ni Aç"
+}
+
+// українська
+STRINGTABLE LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+{
+	IDS_MENUTEXT	"&Відкрити командний рядок"
+}

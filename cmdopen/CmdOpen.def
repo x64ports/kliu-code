@@ -1,0 +1,9 @@
+; Next base address: 0x1F010000
+LIBRARY CmdOpen BASE=0x1F000000
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE
+	DllInstall          PRIVATE

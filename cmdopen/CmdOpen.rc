@@ -1,0 +1,66 @@
+//
+// NOTE: This file is encoded in UTF-8.
+//
+
+/**
+ * Why does this resource script require version 6 or newer of the Resource
+ * Compiler?  Microsoft's Resource Compiler (even the latest version from the
+ * Longhorn SDK) will fail with a fatal error if #pragma code_page is used to
+ * declare that the encoding of the resource script is double-byte Unicode
+ * (UTF-16).  This behavior is very puzzling considering that version 5 of the
+ * Resource Compiler found in Visual Studio 2002 thru 2005 can compile Unicode
+ * resource scripts only if they are in the UTF-16 encoding.  So the Resource
+ * Compiler forces the use of UTF-16, yet it does not support declaring that the
+ * code page is UTF-16.  This is not a problem in Visual Studio 2002 thru 2005,
+ * but in Visual Studio 6, the use of UTF-16 without the proper declaration
+ * results in strange messages being printed by the development environment
+ * during compilation.  As a result, it was decided that UTF-8 would be used
+ * (which is supported only by version 6 or higher), since the Resource Compiler
+ * does not reject the UTF-8 #pragma code_page declaration as it strangely and
+ * mysteriously does with UTF-16.  If you do not plan on compiling with VS6, you
+ * can simply convert from UTF-8 to UTF-16 and eliminate the #pragma code_page
+ * declaration to enable compilation with older versions of the Resource
+ * Compiler.
+ **/
+
+#include <winresrc.h>
+#include "version.h"
+
+// Remove the following line if using UTF-16 instead of UTF-8
+#pragma code_page(65001)
+
+#ifdef _DEBUG
+#define MY_VS_FF_DEBUG VS_FF_DEBUG
+#else
+#define MY_VS_FF_DEBUG 0x0L
+#endif
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+VS_VERSION_INFO     VERSIONINFO
+    FILEVERSION     CMDOPEN_VERSION_FULL
+    PRODUCTVERSION  CMDOPEN_VERSION_FULL
+    FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+    FILEFLAGS       MY_VS_FF_DEBUG
+    FILEOS          VOS_NT_WINDOWS32
+    FILETYPE        VFT_DLL
+    FILESUBTYPE     VFT2_UNKNOWN
+{
+	BLOCK "StringFileInfo"
+	{
+		BLOCK "040904b0" // English (U.S.)
+		{
+			VALUE "CompanyName", CMDOPEN_AUTHOR_STR
+			VALUE "FileDescription", CMDOPEN_NAME_STR
+			VALUE "FileVersion", CMDOPEN_VERSION_STR ARCH_NAME_TAIL
+			VALUE "LegalCopyright", "Copyright © " CMDOPEN_COPYRIGHT_STR
+			VALUE "OriginalFilename", CMDOPEN_FILENAME_STR
+		}
+	}
+	BLOCK "VarFileInfo"
+	{
+		VALUE "Translation", 0x0409, 0x04b0 // English (U.S.)
+	}
+}
+
+#include "CmdOpenTranslations.rc"

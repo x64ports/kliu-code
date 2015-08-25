@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="CmdOpen"
+	ProjectGUID="{180B6246-E138-46C7-8486-57F7FE3D3C24}"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="bin.x86-32"
+			IntermediateDirectory="obj.x86-32"
+			ConfigurationType="2"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN32;NDEBUG;_UNICODE;UNICODE;_WIN32_WINNT=0x0500;SL_MEM_HEAP;FFO_DELETE_ASSUME_INUSE"
+				StringPooling="true"
+				ExceptionHandling="0"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="false"
+				EnableFunctionLevelLinking="true"
+				RuntimeTypeInfo="false"
+				WarningLevel="3"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG;_M_IX86"
+				Culture="1033"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/SUBSYSTEM:WINDOWS,5.0 /OSVERSION:5.0"
+				AdditionalDependencies="shlwapi.lib"
+				GenerateManifest="false"
+				ModuleDefinitionFile="CmdOpen.def"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				SetChecksum="true"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="bin.x86-64"
+			IntermediateDirectory="obj.x86-64"
+			ConfigurationType="2"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN32;NDEBUG;_UNICODE;UNICODE;_WIN32_WINNT=0x0502;SL_MEM_HEAP;FFO_DELETE_ASSUME_INUSE"
+				StringPooling="true"
+				ExceptionHandling="0"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="false"
+				EnableFunctionLevelLinking="true"
+				RuntimeTypeInfo="false"
+				WarningLevel="3"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG;_M_AMD64"
+				Culture="1033"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/SUBSYSTEM:WINDOWS,5.2 /OSVERSION:5.2"
+				AdditionalDependencies="shlwapi.lib"
+				GenerateManifest="false"
+				ModuleDefinitionFile="CmdOpen.def"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				SetChecksum="true"
+			/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+			>
+			<File RelativePath="CmdOpen.cpp" />
+			<File RelativePath="CCmdOpen.cpp" />
+			<File RelativePath="CCmdOpenClassFactory.cpp" />
+			<File RelativePath="GetShieldIcon.cpp" />
+			<File RelativePath="LoadStringEx.c" />
+			<File RelativePath="RegHelpers.c" />
+			<File RelativePath="CmdOpen.def" />
+			<File RelativePath="CmdOpen.rc" />
+		</Filter>
+		<Filter
+			Name="Libraries"
+			Filter=""
+			>
+			<File RelativePath="libs\DefaultHeap.c" />
+			<File RelativePath="libs\DefaultHeapNewDelete.cpp" />
+			<File RelativePath="libs\SimpleList.c" />
+			<File RelativePath="libs\RemoveDecorations.c" />
+			<File RelativePath="libs\Wow64.c" />
+			<File RelativePath="libs\ForceFileOperation.c" />
+		</Filter>
+	</Files>
+</VisualStudioProject>
